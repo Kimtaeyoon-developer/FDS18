@@ -1,6 +1,7 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(./fontello.css);
+
 body *,
 body *::before,
 body *::after {
@@ -10,16 +11,24 @@ body *::after {
 html {
   font-size: 10px;
 }
+
 body {
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-size: 1.4rem;
   color: #181818;
   background: #fff;
 }
+/* 링크스타일*/
+a {
+  color: inherit;
+  text-decoration: none;
+  
+
+}
 
 
 /* 스킵 내비게이션*/
-.skip-nav{
+.skip-nav {
   display: none;
 }
 
@@ -32,15 +41,45 @@ body {
   width: 940px;
   margin: 0 auto;
 }
+
+/* 헤더 */
 .header {
-  background: yellow;
+  position: relative;
+  background: blueviolet;
+  border-radius: 0 0 15px 15px/0 0 10px 10px;
+  padding: 0 30px;
+}
+/* 로고 */
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 65px;
+  margin: 0;
+}
+/* 안내 링크 목록 */
+.member {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  text-align: right;
   
 }
+.member li {
+  display: inline-block;
+  padding: 2px 0;
+}
+.member {
+  padding: 6px 0;
+  display: inline-block;
+  background-color: pink;
+}
+
 .visual {
   background: lime;
   height: 120px;
 }
-.main{
+
+.main {
   background: skyblue;
   /*display: flex;
   flex-flow: row nowrap;
@@ -49,6 +88,7 @@ body {
   overflow: hidden;
   min-height: 450px;
 }
+
 /*.clearfix::after{
   content: "";
   clear: both;
@@ -61,21 +101,26 @@ body {
   margin: 0px 15px;
   float: left;
 }
+
 .group1 {
   background: blue;
   width: 250px;
 }
+
 .group2 {
   background-color: blueviolet;
   width: 380px;
 }
+
 .group3 {
   background-color: lightgreen;
   width: 190px;
 }
+
 .slogan {
   background: orange;
 }
+
 .footer {
   background: pink;
 }
