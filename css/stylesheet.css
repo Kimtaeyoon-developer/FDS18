@@ -318,7 +318,7 @@ a {
   border: 0;
   border-bottom: 1px solid #ccc;
   padding: 0;
-  padding-bottom: 5px; 
+  padding-bottom: 5px;
   margin: 0;
   position: relative
 }
@@ -386,23 +386,49 @@ a {
   padding: 8px 0;
 
 }
+
 /* 유효성 검사 배너 */
 .validation-list {
   margin: 25px 0 0 0;
   list-style-type: none;
   padding-left: 0;
 }
+
 .validation-list a {
   display: block;
   border-radius: 20px;
   border: 1px solid #aaa;
-  background: url(./images/validation_icon.png) no-repeat 25px 50% / 20px 20px, linear-gradient(to bottom, #eee, #ccc);
-  padding: 80px 10px 8px 50px;
+  background: url(./images/validation_icon.png) no-repeat 25px 50% / 20px 20px,
+    linear-gradient(to bottom, #eee, #ccc);
+  padding: 8px 10px 8px 50px;
   margin-top: 10px;
 }
-.validation-list a:hover, .validation-list a:focus{
+
+.validation-list a:hover,
+.validation-list a:focus {
   color: red;
 }
+
+/* .term {
+  border: solid lightgray;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.term h2 {
+  margin: 10px 0 0 5px;
+}
+
+.term figure {
+  margin: 2px;
+}
+
+.term figure img {
+  float: left;
+}
+.term figcaption a {
+  display: block;
+} */
 
 .slogan {
   background: orange;
