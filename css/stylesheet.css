@@ -247,7 +247,7 @@ a {
 }
 
 .visual-text {
-  /* position: absolute; */
+  position: absolute;
   width: 500px;
   margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -408,27 +408,106 @@ a {
 .validation-list a:focus {
   color: red;
 }
-
-/* .term {
-  border: solid lightgray;
-  border-radius: 10px;
-  margin-top: 10px;
+/* 웹관련용어 */
+.term {
+  border: 1px solid #aaa;
+  background: linear-gradient(#ccc, #eee);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
 }
 
-.term h2 {
-  margin: 10px 0 0 5px;
+.term .heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
-
-.term figure {
-  margin: 2px;
+.term-list {
+  margin: 15px 0 0 0;
 }
-
-.term figure img {
+.term-list > div {
+  overflow: hidden;
+}
+.term-list div:nth-child(even) {
+  margin-top: 15px;
+}
+.term-list-subject, 
+.term-list-brief {
+  float: right;
+  width: 145px;
+}
+.term-list-subject {
+  color: #296897;
+}
+.term-list-thumbnail {
   float: left;
 }
-.term figcaption a {
+.term-list-thumbnail img {
   display: block;
+}
+.term-list-brief {
+  margin-top: 5px;
+  line-height: 1.5;
+}
+.term-list dd {
+  margin-left: 0;
+}
+.term-list div:nth-child(even) .term-list-subject,
+.term-list div:nth-child(even) .term-list-brief {
+  float: left;
+}
+.term-list div:nth-child(even) .term-list-thumbnail {
+  float: right;
+}
+
+/* .term .odd {
+  margin: 2px;
+}
+.term-list-subject {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.term .term-list-thumbnail {
+  float: left;
+  margin: 0 10px 0 0;
+}
+.term .term-list-brief {
+  display: block;
+  margin: 0;
 } */
+
+/* 검색 폼 */
+.search-form {
+  border: 1px solid #aaa;
+  border-bottom-color: #fff;
+  background: #ccc linear-gradient(#ccc, #eee);
+  border-radius: 15px 15px 0 0;
+}
+.search-form fieldset {
+  border: 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.search-form [name="search"] {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 1px 1px 1px 0.5em;
+  height: 22px;
+  /* flex-grow: 1; */
+  /* margin: 0.5px; */
+  width: 190px;
+}
+.btn-search {
+  background-color: #333;
+  border: 1px solid #aaa;
+  color: #ccc;
+  border-radius: 3px;
+  height: 22px;
+  padding: 0 10px;
+
 
 .slogan {
   background: orange;
