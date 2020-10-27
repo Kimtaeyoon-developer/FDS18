@@ -530,6 +530,59 @@ a {
   height: 22px;
   padding: 0 10px;
 }
+
+/* 나혼자 해본것 
+.notice {
+  background-color: khaki;
+  position: relative;
+  
+}
+.notice-heading {
+  background-color: lightblue;
+}
+.notice-list {
+  background-color: lightcoral;
+  list-style: none;
+  padding-left: 0;
+}
+.notice-list li {
+  display: flex;
+  justify-content: space-between;
+}
+.notice-list li a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.notice-list::before {
+  
+}
+
+.notice-more {
+  background-color: lightgreen;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pds {
+  background-color: lightpink;
+  position: relative;
+}
+.pds-heading {
+  background-color: lightslategray;
+}
+.pds-list {
+  background-color: limegreen;
+  list-style: none;
+  padding-left: 0;
+}
+.pds-more {
+  background-color: magenta;
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
 /* .heading-notice {
   display: inline-block;
   position: relative;
@@ -556,6 +609,93 @@ a {
   list-style: none;
   padding-left: 0;
 } */
+.board {
+  position: relative;
+  height: 200px;
+  margin-top: 20px;
+}
+.notice-list,
+.pds-list,
+.notice-more,
+.pds-more {
+  display: none;
+}
+
+.is-active .notice-list,
+.is-active .pds-list,
+.is-active .notice-more,
+.is-active .pds-more {
+  display: block;
+}
+.tab {
+  /* float: left; */
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.notice-heading {
+  left: 0;
+}
+.pds-heading{
+  left: 83px;
+}
+.tab a {
+  display: block;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #aaa;
+  background: #ccc linear-gradient(#ccc, #eee);
+  color: #999;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 5px 15px;
+}
+.is-active .tab {
+  z-index: 5;
+}
+.is-active .tab a {
+  color: #ed702d;
+  border-color: #ed702d #ed702d #fff #ed702d;
+  background: #fff;
+}
+.notice-list,
+.pds-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  /* position: absolute;
+  left: 0;
+  top: 45px;
+  width: 100%; */
+  padding-top: 45px;
+  min-height: 170px;
+}
+.notice-list li,
+.pds-list li {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 10px;
+}
+.notice-list a,
+.pds-list a {
+  /* flex-grow: 1; */
+  white-space: nowrap;
+  overflow: hidden;
+  width: 280px;
+  text-overflow: ellipsis;
+}
+.notice-more,
+.pds-more {
+  position: absolute;
+  top: -8px;
+  right: -8px; 
+}
+.notice-more::before,
+.pds-more::before{
+  color: hsla(110, 50%, 30%, 1);
+}
+.news {}
 .slogan {
   background: orange;
 }
