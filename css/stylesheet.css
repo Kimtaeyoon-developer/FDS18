@@ -762,14 +762,14 @@ a {
 }
 .news-article {
   margin-top: 35px;
-}
+} 
 .news-article-link {
   display: grid;
   grid-template-columns: 130px 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas: 'thumbnail subject'
-                       'thumbnail date'
-                       'thumbnail brief' ;
+  'thumbnail date'
+  'thumbnail brief' ;
 }
 .news-article-subject {
   margin: 0 0 5px;
@@ -779,7 +779,7 @@ a {
 .news-article-date {
   grid-area: date;
 }
-.news-article-brief {
+.news-item-brief {
   margin: 10px 0 0;
   grid-area: brief;
   line-height: 1.5;
@@ -812,3 +812,4 @@ a {
 .footer {
   background: pink;
 }
+ 
