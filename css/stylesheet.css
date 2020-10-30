@@ -837,33 +837,47 @@ a {
   border-radius: 5px;
   padding: 10px;
 }
+
 .event {
   position: relative;
+  border-bottom: 1px solid #aaa;
 }
+
+.related {
+  padding-top: 10px;
+}
+
 .event-heading,
-.related-heading {
+.related-heading,
+.favorite-heading {
   font-size: 1.6rem;
   font-weight: 700;
   margin: 0;
 }
+
 .point-color {
-  color:#ed702d;
+  color: #ed702d;
 }
+
 .event-thumbnail img {
   border: 1px solid #aaa;
   box-shadow: 5px 5px 0 0 #aaa;
 }
+
 .event-brief {
   line-height: 1.5;
 }
-.event-brief em{
+
+.event-brief em {
   font-style: normal;
 }
+
 .btn-event {
-  position: absolute;~
+  position: absolute;
   top: 0;
   right: 0;
 }
+
 .btn-prev,
 .btn-next {
   border: 0;
@@ -873,8 +887,209 @@ a {
   width: 19px;
   background: transparent url(./images/back_forward.png) 0 0 no-repeat;
 }
+
 .btn-next {
   background-position: -36px 0;
+}
+
+.related-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0 0;
+  height: 27px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: height 400ms, padding 400ms 400ms;
+}
+
+.related-list:hover {
+  height: 147px;
+  padding: 10px 0;
+}
+
+.related-list li {
+  padding: 2px 5px 3px 5px;
+}
+
+.related-list a {
+  display: block;
+  line-height: 20px;
+  padding-left: 20px;
+}
+
+/* 인기사이트 */
+/* .favorite-div {
+.favorite {
+  border: 1px solid #aaa;
+  position: relative;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px;
+  background: #ccc linear-gradient(#ccc, #eee);
+}
+
+  position: relative;
+}
+
+.favorite-heading {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.favorite-list {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.number1,
+.number2,
+.number3,
+.number4 {
+  background-color: rgb(153, 153, 153);
+  /* display: inline-block; 
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.favorite-list li {
+  list-style: none;
+  margin-top: 10px;
+  display: flex;
+}
+
+.favorite-list li a {
+  width: 100%;
+  display: inline-block;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn1::after,
+.btn4::after {
+  content: "";
+  width: 15px;
+  height: 13px;
+  background: url(./images/rank.png) no-repeat;
+  background-size: 10px;
+  background-position: top;
+  /* background-position-x: center; */
+  /* display: inline-block; 
+
+}
+
+.btn2::after {
+  content: "";
+  width: 15px;
+  height: 13px;
+  background: url(./images/rank.png) no-repeat;
+  background-size: 10px;
+  background-position: bottom;
+}
+
+.btn3::after {
+  content: "";
+  width: 15px;
+  height: 13px;
+  background: url(./images/rank.png) no-repeat;
+  background-size: 10px;
+  background-position: center;
+}
+
+.list-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.icon-plus::before {
+  color: hsla(110, 50%, 30%, 1);
+} */
+
+
+
+/* 인기 사이트(강사님) */
+.favorite {
+  margin-top: 20px;
+  position: relative;
+}
+.favorite-list {
+  margin: 10px 0 0 0;
+  padding-left: 0;
+  list-style: none;
+
+}
+.favorite-list li{
+  position: relative;
+  margin-top: 8px;~
+  counter-increment: number;
+  /* display: flex;
+  flex-flow: row nowrap;
+  align-items: center; */
+}
+.favorite-list li::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* margin-top: -9px; */
+  content: counter(number);
+  color: #fff;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 2px 5px;
+  margin-right: 5px;
+  background-color: #999;
+  border-radius: 2px;
+}
+.favorite-list a {
+  margin: 0 10px 0 25px;
+  display: block;
+  /* flex-grow: 1; */
+}
+.up, .stop, .down {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -5px;
+  /* display: inline-block; */
+  font-style: normal;
+  width: 9px;
+  height: 0;
+  padding-top: 11px;
+  overflow: hidden;
+  background-image: url(./images/rank.png);
+  background-repeat: no-repeat;
+}
+.up {
+  background-position: 0 0;
+}
+.stop {
+  background-position: 0 50%;
+}
+.down {
+  background-position: 0 100%;
+}
+.favorite-more {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  padding: 8px;
+}
+.favorite-more::before {
+  color: hsla(110, 50%, 30%, 1);
+}
+
+.favorite-list .up {
+  background-position: 0 0;
+
 }
 .slogan {
   background: orange;
